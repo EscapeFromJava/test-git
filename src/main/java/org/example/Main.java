@@ -1,6 +1,9 @@
 package org.example;
 
+import lombok.SneakyThrows;
+
 public class Main {
+    @SneakyThrows
     public static void main(String[] args) {
         System.out.println("Base");
         System.out.println("Base Commit 1");
@@ -21,5 +24,13 @@ public class Main {
                 .build();
 
         System.out.println(cat);
+
+        CatHouse catHouse = new CatHouse();
+        catHouse.addCat(cat);
+        System.out.println("Size: " + catHouse.getCats().size());
+        catHouse.removeCat(cat.getName());
+        System.out.println("Size: " + catHouse.getCats().size());
+        catHouse.removeCat(cat.getName());
+        System.out.println("Size: " + catHouse.getCats().size());
     }
 }
