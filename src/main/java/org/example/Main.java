@@ -21,5 +21,8 @@ public class Main {
                 .build();
 
         System.out.println(cat);
+
+        System.out.println("Demo Commit 1");
+        System.out.println("Demo Commit 2");
     }
 }
