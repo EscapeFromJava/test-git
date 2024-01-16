@@ -32,5 +32,6 @@ public class Main {
         System.out.println("Size: " + catHouse.getCats().size());
         catHouse.removeCat(cat.getName());
         System.out.println("Size: " + catHouse.getCats().size());
+        //add
     }
 }
